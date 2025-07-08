@@ -1,0 +1,10 @@
+name: tc1d-binder
+channels:
+  - conda-forge
+dependencies:
+  - matplotlib
+  - numpy
+  - scipy
+  - scikit-learn
+  - IPython
+  - neighpy
