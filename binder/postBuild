@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd RDAMM_He
+cd RDAAM_He
 make
 make install
 cd ..
