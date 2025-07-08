@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd RDAMM_He
+make
+make install
+cd ..
+
+cd ketch_aft
+make
+make install
+cd ..
