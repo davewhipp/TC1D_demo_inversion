@@ -1,1 +1,12 @@
-py/*tT_hist.csv
+# Mac & Python artifacts
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+venv/
+
+# VSCode / PyCharm
+.idea/
+.vscode/
+
+# Jupyter notebooks metadata
+*.checkpoint.ipynbpy/*tT_hist.csv
