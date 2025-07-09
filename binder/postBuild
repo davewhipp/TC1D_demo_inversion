@@ -1,12 +1,14 @@
 #!/bin/bash
 
 echo "[postBuild] Installing gfortran..."
-apt-get update && apt-get install -y gfortran
+apt-get update && apt-get install -y gfortran make
 
-echo "[postBuild] Compiling RDAAM_He..."
-gfortran -O2 -o tc1d/bin/RDAAM_He tc1d/bin/RDAAM_He.f90
+echo "[postBuild] Compiling RDAAM_He and ketch_aft using make..."
 
-echo "[postBuild] Compiling ketch_aft..."
-gfortran -O2 -o tc1d/bin/ketch_aft tc1d/bin/ketch_aft.f90
+cd ketch_aft
+make && make install
+cd ../RDAAM_He
+make && make install
+cd ..
 
-echo "[postBuild] Done."
+echo "[postBuild] Done compiling executables."
