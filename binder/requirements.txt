@@ -6,7 +6,6 @@ fonttools==4.58.2
 joblib==1.5.1
 kiwisolver==1.4.7
 matplotlib==3.10.3
-mpi4py==4.0.3
 munkres==1.1.4
 neighpy==0.1.7
 numpy==2.2.6

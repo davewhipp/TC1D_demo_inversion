@@ -2004,7 +2004,7 @@ def batch_run_na(params, batch_params):
             ns=60,  # 16 #100, # number of samples per iteration #10
             nr=30,  # 8 #10, # number of cells to resample #1
             ni=120,  # 100, # size of initial random search #1
-            n=8,  # 20, # number of iterations #1
+            n=10,  # 20, # number of iterations #1
             bounds=bounds,
         )
 
