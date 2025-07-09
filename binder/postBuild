@@ -1,16 +1,18 @@
 #!/bin/bash
 
-echo "[postBuild] Installing gfortran..."
+mkdir -p bin
+
+echo "[postBuild] Installing gfortran and make..."
 apt-get update && apt-get install -y gfortran make
 
-echo "[postBuild] Compiling RDAAM_He and ketch_aft using make..."
-
+echo "[postBuild] Compiling ketch_aft and RDAAM_He using make..."
 cd ketch_aft
 make && make install
 cd ../RDAAM_He
 make && make install
 cd ..
 
+echo "[postBuild] Setting executable permissions..."
 chmod +x bin/RDAAM_He
 chmod +x bin/ketch_aft
 
