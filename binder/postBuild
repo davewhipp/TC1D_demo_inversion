@@ -11,4 +11,7 @@ cd ../RDAAM_He
 make && make install
 cd ..
 
+chmod +x bin/RDAAM_He
+chmod +x bin/ketch_aft
+
 echo "[postBuild] Done compiling executables."
