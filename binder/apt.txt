@@ -1,2 +1,4 @@
 gfortran
 make
+gcc
+g++
