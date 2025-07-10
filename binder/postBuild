@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "[postBuild] Installing gfortran and make..."
-apt-get update && apt-get install -y gfortran make gcc g++
+apt-get update && apt-get install -y gfortran make gcc-12 g++-12
 
 echo "[postBuild] Compiling ketch_aft and RDAAM_He using make..."
 cd ketch_aft
