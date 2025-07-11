@@ -2001,9 +2001,9 @@ def batch_run_na(params, batch_params):
         # Initialize NA searcher
         searcher = NASearcher(
             objective,
-            ns=60,  # 16 #100, # number of samples per iteration #10
-            nr=30,  # 8 #10, # number of cells to resample #1
-            ni=120,  # 100, # size of initial random search #1
+            ns=20,  # 16 #100, # number of samples per iteration #10
+            nr=10,  # 8 #10, # number of cells to resample #1
+            ni=40,  # 100, # size of initial random search #1
             n=10,  # 20, # number of iterations #1
             bounds=bounds,
         )
