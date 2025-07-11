@@ -2038,7 +2038,7 @@ def batch_run_na(params, batch_params):
             initial_ensemble=searcher.samples,  # points of parameter space already sampled
             log_ppd=-searcher.objectives,  # objective function values
             bounds=bounds,
-            n_resample=500,  # number of desired new samples #100
+            n_resample=2000,  # number of desired new samples #100
             n_walkers=5,  # number of parallel walkers #1
         )
 

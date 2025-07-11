@@ -5,8 +5,10 @@ apt-get update && apt-get install -y gfortran make gcc-12 g++-12
 
 echo "[postBuild] Compiling ketch_aft and RDAAM_He using make..."
 cd ketch_aft
+make clean
 make && make install
 cd ../RDAAM_He
+make clean
 make && make install
 cd ..
 
