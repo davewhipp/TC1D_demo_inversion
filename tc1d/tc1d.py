@@ -2001,9 +2001,9 @@ def batch_run_na(params, batch_params):
         # Initialize NA searcher
         searcher = NASearcher(
             objective,
-            ns=60,  # 16 #100, # number of samples per iteration #10
-            nr=30,  # 8 #10, # number of cells to resample #1
-            ni=120,  # 100, # size of initial random search #1
+            ns=30,  # 16 #100, # number of samples per iteration #10
+            nr=15,  # 8 #10, # number of cells to resample #1
+            ni=60,  # 100, # size of initial random search #1
             n=10,  # 20, # number of iterations #1
             bounds=bounds,
         )
@@ -2038,7 +2038,7 @@ def batch_run_na(params, batch_params):
             initial_ensemble=searcher.samples,  # points of parameter space already sampled
             log_ppd=-searcher.objectives,  # objective function values
             bounds=bounds,
-            n_resample=2000,  # number of desired new samples #100
+            n_resample=500,  # number of desired new samples #100
             n_walkers=5,  # number of parallel walkers #1
         )
 
