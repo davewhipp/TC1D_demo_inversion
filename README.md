@@ -1,4 +1,4 @@
-# T<sub>c</sub>1D - A 1D thermal and thermochronometer age prediction model
+# T<sub>c</sub>1D - A 1D thermal and thermochronometer age prediction model (Inverse mode)
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gerardb-fr/TC1D_demo_inversion.git/main?urlpath=%2Fdoc%2Ftree%2Fexplore_tc1d_inversions.ipynb)
 [![Documentation Status](https://readthedocs.org/projects/tc1d/badge/?version=latest)](https://tc1d.readthedocs.io/en/latest/?badge=latest)
